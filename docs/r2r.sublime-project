@@ -1,0 +1,25 @@
+{
+  "folders":
+  [
+    {
+      "follow_symlinks": true,
+      "path": "../app",
+      "folder_exclude_patterns":
+      [
+        ".meteor/local",
+        "/packages/*/.*"
+      ]
+    },
+    {
+      "follow_symlinks": true,
+      "path": "../bin"
+    },
+    {
+      "path": "../test"
+    },
+    {
+      "path": "../docs"
+    },
+
+  ]
+}

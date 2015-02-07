@@ -24,3 +24,17 @@ reactive-var
 # dcsan:dclib
 # dcsan:ribot
 # dcsan:streamer
+
+accounts-password
+
+fourseven:scss
+zimme:iron-router-active
+anti:fake
+matb33:collection-hooks
+aldeed:collection2
+aldeed:autoform
+meteoric:ionic-sass
+meteoric:ionicons-sass
+meteoric:ionic
+meteoric:autoform-ionic
+useraccounts:ionic
