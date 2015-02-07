@@ -1,17 +1,24 @@
 <template name="index">
   {{#contentFor "headerTitle"}}
-    <h1 class="title">Meteor Ionic</h1>
+    <h1 class="title">R2R</h1>
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
       {{#ionList}}
 
-        {{#ionItem path="actionSheet" iconLeft=true iconRight=true}}
+        {{#ionItem path="interview" iconLeft=true iconRight=true}}
           {{> ionIcon icon="ios-checkmark" class="positive"}}
-          Start here
+          Interview
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}}
+
+        {{#ionItem path="studentList" iconLeft=true iconRight=true}}
+          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          studentList
+          {{> ionIcon icon="ios-arrow-right"}}
+        {{/ionItem}}
+
 
 
       {{/ionList}}

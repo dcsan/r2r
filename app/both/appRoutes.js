@@ -13,13 +13,14 @@ Meteor.startup(function () {
 
 Router.map(function() {
   this.route('index', {path: '/'});
-  this.route('actionSheet');
-  this.route('backdrop');
-  this.route('forms', {
-    data: function () {
-      return {
-        post: Posts.find().fetch()[0]
-      };
-    }
-  });
+  this.route('studentList');
+  this.route('studentAdd');
+  this.route('interview');
+  // this.route('forms', {
+  //   data: function () {
+  //     return {
+  //       post: Posts.find().fetch()[0]
+  //     };
+  //   }
+  // });
 })
