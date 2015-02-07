@@ -20,3 +20,7 @@ Meteor.startup ->
     Router.route "/student/add", ->
       @render "studentAdd"
 
+    Router.route "/admin", ->
+      @render "admin"
+
+
