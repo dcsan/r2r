@@ -1,0 +1,1 @@
+cd app && meteor test-packages --port 4000

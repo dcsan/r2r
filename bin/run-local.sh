@@ -1,0 +1,1 @@
+cd app && meteor run  # --settings "config/config.json"
