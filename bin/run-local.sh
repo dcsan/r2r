@@ -1,1 +1,1 @@
-cd app && meteor run  # --settings "config/config.json"
+cd meteor-app && meteor run  # --settings "config/config.json"
