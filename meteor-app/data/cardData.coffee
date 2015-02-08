@@ -2,6 +2,9 @@
 
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
+    icon: "/skills/skill1.png"
     skill: "Begins to self-correct at point of error"
     hilite: "Read this word again and see if you can fix it."
     points: [
@@ -12,6 +15,8 @@
 
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
     skill: "Comments on events or characters"
     hilite: "How does this story/character make you feel? What / Who in your life makes you feel this way?"
     points: [
@@ -22,6 +27,8 @@
 
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
     skill: "Integrates sources of meanings"
     hilite: "Check the illustrations and make pictures in your mind about what's happening."
     points: [
@@ -32,6 +39,8 @@
   
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
     skill: "Makes Inferences"
     hilite: "Think about something you know that helps you talk about what is happening."
     points: [
@@ -42,6 +51,8 @@
   
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
     skill: "Reads increasingly difficult words"
     hilite: "Use letter/sound analysis to solve the word."
     points: [
@@ -51,6 +62,8 @@
   
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
     skill: "Reads with fluency and phrasing"
     hilite: "Make your reading sound like you're telling a story."
     points: [
@@ -61,6 +74,8 @@
   
   {
     level: "G"
+    icon: "/skills/retell.jpg"
+
     skill: "Retells and Summarizes"
     hilite: "Look back through pages to think about what's happened."
     points: [
@@ -70,6 +85,8 @@
   
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
     skill: "Uses known words to read unknown words"
     hilite: "Use a word that you know to help."
     points: [
@@ -79,15 +96,19 @@
   
   {
     level: "G"
+    icon: "/skills/skill1.png"
+
     skill: "Uses context to decipher unfamiliar vocab"
     hilite: "Think about what's going on to figure out what this word means."
     points: [
-      "Use a word that you know to help."      
+      "Use a word that you know to help."
     ]
   }
 
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Accumulates content and events in mind"
     hilite: "Stop and look back through the pages. What's happened so far?"
     points: [
@@ -97,6 +118,8 @@
   
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Begins to self-correct at point of error"
     hilite: "Something wasn't quite right. Go back and see if you can fix it."
     points: [
@@ -107,6 +130,8 @@
   
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Deals with complex vocabulary"
     hilite: "Think about what's going on in the text. Figure out what's going on."
     points: [
@@ -116,6 +141,8 @@
   
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Deals with literary structures including nonfiction"
     hilite: "Read this word again and see if you can fix it."
     points: [
@@ -126,6 +153,8 @@
   
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Envisions text rather than relying on pictures"
     hilite: "Get a picture in our mind. Stop and picture what's going on."
     points: [
@@ -135,6 +164,8 @@
   
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Makes Inferences"
     hilite: "Make real life connections to characters and events."
     points: [
@@ -145,6 +176,8 @@
   
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Reads with fluency and phrasing"
     hilite: "Use the punctuation in this part to help you read. Read in phrases."
     points: [
@@ -155,6 +188,8 @@
   
   {
     level: "H"
+    icon: "/skills/skill1.png"
+
     skill: "Retells and Summarizes"
     hilite: "Can you articulate the big event?"
     points: [

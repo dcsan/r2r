@@ -30,52 +30,40 @@
 </div>
 
 <div class="row">
-  <div class="title col col-75">Irina Tagintseva</div>
-    <!-- <div class="buttons col">
-      <i class="button">{{> ionIcon icon="icon ion-share"}}</i>
-    </div> -->
+  <div class="col col-80 studentName">Irina Tagintseva</div>
+  <div class="col col-20 grade">J</div>
   </div>
 </ion-content>
 
 {{#ionList}}
 
 {{#each cards}}
+<div class="list card colorme">
 
-<div class="list card">
-  <div class="item">
-    <h2>My skill #1</h2>
-    <label class="checkbox checkbox-positive">
-      <input type="checkbox">
-    </label>
+  <div class="item item-avatar">
+    <img src="{{icon}}">
+    <span class='skill'>{{skill}}</span>
   </div>
-  <div class="item item-text-wrap">
-    <div class="info">
 
-      <a href="#" class="item item-icon-left">
-        <i class="icon"></i>
-        Teaching point #1
-      </a>
-
-      <a href="#" class="item item-icon-left">
-        <i class="icon"></i>
-        Teaching point #2
-      </a>
-
-      <a href="#" class="item item-icon-left">
-        <i class="icon"></i>
-        Teaching point #3
-      </a>
-
-      <a href="#" class="item item-icon-left">
-        <i class="icon"></i>
-        Teaching point #4
-      </a>
-
-    </div>
+  <div class="item-body">
+    {{hilite}}
   </div>
-  <div class="item item-divider">
-    <div class="grades">their past grades</div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-ios-compose"></i>
+      Comment
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-alert-circled"></i>
+      Share
+    </a>
   </div>
+
 </div>
 
 {{/each}}
