@@ -14,6 +14,7 @@ Meteor.startup(function () {
 Router.map(function() {
   this.route('index', {path: '/'});
   this.route('studentList');
+  this.route('cardList');
   this.route('studentAdd');
   this.route('interview');
   // this.route('forms', {

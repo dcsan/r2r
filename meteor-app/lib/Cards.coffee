@@ -1,10 +1,14 @@
-Cards = new Meteor.Collection("Cards")
+@Cards = new Meteor.Collection("Cards")
 
 
-reloadTopics = () ->
+reloadCards = () ->
   console.log("reload topics")
+  Cards.remove({})
+  for card in @cardData
+    Cards.insert(card)
+
 
 if Meteor.isServer
   Meteor.startup ->
-    reloadTopics()
+    reloadCards()
 
