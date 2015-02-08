@@ -1,100 +1,21 @@
-<<<<<<< HEAD
 <template name="studentList">
 
   {{#contentFor "headerTitle"}}
     <h1 class="title">Students</h1>
-=======
-<!-- <template name="studentList">
-  {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton path="contacts" text="Home"}}
-  {{/contentFor}}
-
-  {{#contentFor "headerTitle"}}
-    <h1 class="title">Student list</h1>
-  {{/contentFor}}
-
-  {{#contentFor "headerButtonRight"}}
-    <button class="button button-clear" data-ion-modal="_contactsEdit" data-id="{{contact._id}}">Filter</button>
-  {{/contentFor}}
-
-  {{#ionView}}
-    {{#ionContent class="padding contact-detail"}}
-      {{#with contact}}
-        <div class="list card">
-
-          <div class="item item-avatar">
-            <img src="{{avatarUrl}}">
-            <h2>{{name.first}} {{name.last}}</h2>
-            <p>{{location.city}}, {{location.state}}</p>
-          </div>
-
-          <div class="item item-body">
-            {{{activeLabel}}}
-
-            <h4>Notes</h4>
-            <p>
-              {{details.notes}}
-            </p>
-          </div>
-
-          <div class="item tabs tabs-secondary tabs-icon-left">
-            <a class="tab-item" href="#" data-action="fake">
-              <i class="icon ion-email"></i>
-              Send Email
-            </a>
-            <a class="tab-item" href="#" data-action="fake">
-              <i class="icon ion-iphone"></i>
-              Call
-            </a>
-            <a class="tab-item" href="#" data-action="fake">
-              <i class="icon ion-share"></i>
-              Share
-            </a>
-          </div>
-
-        </div>
-      {{/with}}
-    {{/ionContent}}
-  {{/ionView}}
-</template> -->
-
-
-<template name="studentList">
-  {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton path="contacts" text="Home"}}
-  {{/contentFor}}
-  {{#contentFor "headerTitle"}}
-    <h1 class="title">Contacts</h1>
-  {{/contentFor}}
-
-  {{#contentFor "headerButtonRight"}}
-    <button class="button button-clear" data-ion-modal="_contactsNew">{{> ionIcon icon="ios-arrow-forward"}}</button>
->>>>>>> 524b066de04bbec95477c65147a03433e96ebb42
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
       {{#ionList}}
-<<<<<<< HEAD
         {{#each students}}
           {{#ionItem buttonRight=true avatar=true class="item-icon-right"}}
             <img src="{{avatarUrl}}">
             {{name}}
-=======
-        {{#each contacts}}
-          {{#ionItem path="contacts.show" buttonRight=true avatar=true class="item-icon-right"}}
-            <img src="{{avatarUrl}}">
-            {{name.first}} {{name.last}}
->>>>>>> 524b066de04bbec95477c65147a03433e96ebb42
             {{> ionIcon icon="ios-arrow-forward" class="positive"}}
           {{/ionItem}}
         {{/each}}
       {{/ionList}}
     {{/ionContent}}
   {{/ionView}}
-<<<<<<< HEAD
 
 </template>
-=======
-</template>
->>>>>>> 524b066de04bbec95477c65147a03433e96ebb42
