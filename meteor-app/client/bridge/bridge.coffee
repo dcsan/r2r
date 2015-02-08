@@ -12,3 +12,15 @@ Template.bridge.helpers
       }
 
     ]
+
+
+Template.bridge.events
+  "click #call1": (evt) ->
+    console.log("call1")
+
+  "click #call2": (evt) ->
+    console.log("call2")
+
+  "click #call3": (evt) ->
+    console.log("call3")
+

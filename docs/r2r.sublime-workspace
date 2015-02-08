@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ios-",
+				"ios-arrow-right"
+			],
+			[
 				"back",
 				"background"
 			],
@@ -510,15 +514,35 @@
 			[
 				"card",
 				"cardify"
-			],
-			[
-				"po",
-				"PopupCard"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.jade",
+			"settings":
+			{
+				"buffer_size": 245,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.html",
+			"settings":
+			{
+				"buffer_size": 360,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.coffee",
+			"settings":
+			{
+				"buffer_size": 243,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xCoffee.sublime-build",
 	"command_palette":
@@ -693,10 +717,48 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/dc/dev/ref/r2r"
+		"/Users/dc/dev/ref/r2r/meteor-app",
+		"/Users/dc/dev/ref/r2r/meteor-app/client",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/admin",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/contacts",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/interview",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/studentList",
+		"/Users/dc/dev/ref/r2r/meteor-app/data",
+		"/Users/dc/dev/ref/r2r/meteor-app/lib"
 	],
 	"file_history":
 	[
+		"/Users/dc/dev/ref/r2r/meteor-app/client/index/index.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.jade",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.Xjade",
+		"/Users/dc/dev/ref/r2r/meteor-app/both/appRoutes.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/cardList/cardList.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/interview/interview.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/webapp/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/test/simple/test-stream2-readable-legacy-drain.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/data/cardData.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/cardList/cardList.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/lib/Cards.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/data/userData.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/studentList/studentList.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/studentList/studentList.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/stylesheets/app.scss",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/packages/accounts-password.js",
+		"/Users/dc/dev/ref/r2r/bin/atquery.sh",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/layouts/metatags.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/lib/Topics.coffee",
+		"/Users/dc/dev/ref/r2r/docs/r2r.sublime-project",
+		"/Users/dc/dev/ref/r2r/bin/deploy.sh",
+		"/Users/dc/dev/ref/r2r/app/client/contacts/contacts.html",
+		"/Users/dc/dev/ref/r2r/app/client/index/index.html",
+		"/Users/dc/dev/ref/r2r/app/both/appRoutes.js",
+		"/Users/dc/dev/ref/r2r/app/client/interview/interview.html",
+		"/Users/dc/dev/ref/r2r/app/client/interview/interview.styl",
+		"/Users/dc/dev/ref/r2r/app/.meteor/packages",
+		"/Users/dc/dev/ref/r2r/app/both/appRoutes.coffee",
+		"/Users/dc/dev/ref/r2r/app/client/layouts/layout.html",
+		"/Users/dc/dev/ref/r2r/app/client/layouts/metatags.html",
 		"/Users/dc/dev/shumi/chatU/docs/chatU.sublime-project",
 		"/Users/dc/dev/shumi/chatU/app/packages/ribot/both/appRoutes.coffee",
 		"/Users/dc/dev/shumi/chatU/app/packages/streamer/both/appRoutes.coffee",
@@ -794,37 +856,7 @@
 		"/Users/dc/dev/shumi/chatU/app/client/widgets/backpack.styl",
 		"/Users/dc/dev/shumi/chatU/app/client/widgets/backpack.coffee",
 		"/Users/dc/dev/shumi/chatU/app/client/widgets/inlinetip.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/inlinetip.jade",
-		"/Users/dc/dev/shumi/chatU/app/data/stories/lost/lookTicket.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/sidemenu/font-media.css",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/help.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/help.jade",
-		"/Users/dc/dev/shumi/chatU/app/public/assets/wisc/house_int.svg",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/images.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/headline.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/streamer/package.js",
-		"/Users/dc/dev/shumi/chatU/app/lib/SceneData.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/threeChoice.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/thinking.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/docs/aiden/friendly.rs",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/images.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/twoshot.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/bubbles.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/docs/aiden/prefix-suffix.rs",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/shouting.styl",
-		"/Users/dc/dev/shumi/chatU/app/data/stories/lost/train.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/headline.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/bubTM.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/bubright.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/friends/friends.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/thinking.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/background.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/sidemenu/notes.txt",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/sidemenu/sidemenu.styl",
-		"/Users/dc/dev/shumi/chatU/app/public/fonts/microphone.svg",
-		"/Users/dc/dev/shumi/chatU/bin/run-local.sh",
-		"/Users/dc/dev/shumi/chatU/app/packages/dclib/lib/package.js",
-		"/Users/dc/dev/shumi/chatU/app/packages/dclib/lib/dclib2.coffee"
+		"/Users/dc/dev/shumi/chatU/app/client/widgets/inlinetip.jade"
 	],
 	"find":
 	{
@@ -835,6 +867,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"",
 			"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost",
 			"/Users/dc/dev/shumi/chatU/app/client/widgets",
 			"/Users/dc/dev/shumi/chatU/app/, *styl",
@@ -961,8 +994,7 @@
 			"/Users/dc/dev/shumi/redes/app/packages,*.js",
 			"/Users/dc/dev/shumi/redes/packages/*/package.js",
 			"/Users/dc/dev/shumi/redes/,-*.map",
-			"/Users/dc/dev/shumi/redes/,-*.css.map",
-			"/Users/dc/dev/shumi/redes/,-.css.map"
+			"/Users/dc/dev/shumi/redes/,-*.css.map"
 		]
 	},
 	"find_state":
@@ -970,6 +1002,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bootstrap",
 			"you.jp",
 			"you",
 			"/assets/lost/items",
@@ -1096,8 +1129,7 @@
 			"RBot",
 			"fname",
 			"parse",
-			"_node_load_file",
-			"loadF"
+			"_node_load_file"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1243,8 +1275,270 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1299,7 +1593,55 @@
 		"selected_items":
 		[
 			[
+				"index",
+				"meteor-app/client/index/index.html"
+			],
+			[
+				"admi",
+				"meteor-app/client/admin/admin.jade"
+			],
+			[
+				"admin",
+				"meteor-app/client/admin/admin.jade"
+			],
+			[
 				"appr",
+				"meteor-app/both/appRoutes.js"
+			],
+			[
+				"inde",
+				"meteor-app/client/index/index.html"
+			],
+			[
+				"cardl",
+				"meteor-app/client/cardList/cardList.html"
+			],
+			[
+				"interv",
+				"meteor-app/client/interview/interview.html"
+			],
+			[
+				"in",
+				"meteor-app/client/index/index.html"
+			],
+			[
+				"cardd",
+				"meteor-app/data/cardData.coffee"
+			],
+			[
+				"card",
+				"meteor-app/data/cardData.coffee"
+			],
+			[
+				"dep",
+				"bin/deploy.sh"
+			],
+			[
+				"cont",
+				"app/client/contacts/contacts.html"
+			],
+			[
+				"app",
 				"app/both/appRoutes.coffee"
 			],
 			[
@@ -1399,10 +1741,6 @@
 				"app/client/widgets/question.jade"
 			],
 			[
-				"app",
-				"app/packages/ribot/both/appRoutes.coffee"
-			],
-			[
 				"cri",
 				"app/packages/ribot/lib/CRibot.coffee"
 			],
@@ -1449,10 +1787,6 @@
 			[
 				"qui",
 				"app/client/widgets/quiz.jade"
-			],
-			[
-				"cont",
-				"app/client/widgets/continue.styl"
 			],
 			[
 				"que",
@@ -1769,46 +2103,6 @@
 			[
 				"ch",
 				"app/client/widgets/chatline.styl"
-			],
-			[
-				"ehad",
-				"app/client/widgets/headline.styl"
-			],
-			[
-				"steram",
-				"app/packages/streamer/lib/CStreamer.coffee"
-			],
-			[
-				"backpac",
-				"app/packages/ribot/data/lost/backpack.rive"
-			],
-			[
-				"storye",
-				"app/lib/StoryEngine.coffee"
-			],
-			[
-				"bik",
-				"app/packages/ribot/data/biker.rive"
-			],
-			[
-				"random",
-				"app/packages/ribot/data/random.rive"
-			],
-			[
-				"tr",
-				"app/packages/ribot/data/train.rive"
-			],
-			[
-				"csto",
-				"app/packages/storybot/lib/CStorybot.coffee"
-			],
-			[
-				"nav",
-				"app/packages/ribot/data/nav.rive"
-			],
-			[
-				"storyb",
-				"app/packages/storybot/lib/Storybot.coffee"
 			]
 		],
 		"width": 0.0
