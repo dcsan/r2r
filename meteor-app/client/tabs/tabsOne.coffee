@@ -26,9 +26,9 @@ Template.tabsOne.events
       Goals.remove(cardid)
 
   'click #fb1': (evt) ->
-    $(evt.target).toggleClass("assertive")
+    $(evt.target).toggleClass("balanced")
     $(evt.target).toggleClass("active")
 
   'click #fb2': (evt) ->
-    $(evt.target).toggleClass("assertive")
+    $(evt.target).toggleClass("energized")
     $(evt.target).toggleClass("active")

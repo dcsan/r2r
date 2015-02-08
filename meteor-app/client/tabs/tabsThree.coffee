@@ -1,6 +1,12 @@
-Template.tabsThree.rendered = () ->
-  Tracker.autorun( drawChart )
+# chart1 = null
 
+Template.tabsThree.rendered = () ->
+  drawChart()
+  Tracker.autorun( updateChart )
+
+updateChart = () ->
+  lastCount = Goals.find().count()
+  chart1.update()
 
 drawChart = () ->
   console.log("show chart")
@@ -10,7 +16,7 @@ drawChart = () ->
 
   lastCount = Goals.find().count()
 
-  data = {
+  chartData = {
       labels: ["Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb"],
       datasets: [
           {
@@ -23,6 +29,5 @@ drawChart = () ->
           },
       ]
   }
-  options = {}
-  chart1 = new Chart(ctx).Bar(data, options)
+  @chart1 = new Chart(ctx).Bar(chartData)
 
