@@ -1,0 +1,17 @@
+<template name="_tabs">
+  {{#if isAndroid}}
+    {{#ionTabs style="android" class="tabs-background-positive tabs-color-light"}}
+      {{> ionTab title="Tab 1" path="tabs.one" icon="android-microphone"}}
+      {{> ionTab title="Tab 2" path="tabs.two" icon="ios-list"}}
+      {{> ionTab title="Tab 3" path="tabs.three" icon="ios-pie"}}
+
+    {{/ionTabs}}
+  {{else}}
+    {{#ionTabs style="ios"}}
+      {{> ionTab title="Tab 1" path="tabs.one" iconOff="android-microphone" iconOn="android-microphone"}}
+      {{> ionTab title="Tab 2" path="tabs.two" iconOff="ios-list" iconOn="ios-list"}}
+      {{> ionTab title="Tab 3" path="tabs.three" iconOff="ios-pie" iconOn="ios-pie"}}
+
+    {{/ionTabs}}
+  {{/if}}
+</template>
