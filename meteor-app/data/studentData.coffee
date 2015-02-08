@@ -1,23 +1,23 @@
 @studentData = [
 
   {
-    name: "abby one"
+    name: "Irina Tagintseva"
     icon: "student1.png"
   }
 
   {
-    name: "bob"
-    icon: "student1.png"
+    name: "Bob Grant"
+    icon: "student2.png"
   }
 
   {
-    name: "charlie"
-    icon: "student1.png"
+    name: "Charlie Cheever"
+    icon: "student2.png"
   }
 
   {
-    name: "daniel"
-    icon: "student1.png"
+    name: "Daniel Long"
+    icon: "student2.png"
   }
 
 ]
