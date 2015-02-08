@@ -10,18 +10,120 @@
 
   {{#ionView}}
     {{#ionContent}}
+
+      <div class="button-bar">
+        <a class="button" id="sortName">Name</a>
+        <a class="button" id="sortLevel">Level</a>
+      </div>
+
       {{#ionList}}
-        {{#each students}}
+        
+        {{#ionItem buttonRight=true class="item-icon-right itemDivider"}}
+           <b> Makes Inferences </b>
+          {{/ionItem}}
+
 
           {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
-            <img src="/students/{{icon}}" >
-            {{name}}
+            <img src="/students/image6.jpeg" >
+            Arianna Morrison
+            <br>
+            level: H
             {{> ionIcon icon="ios-arrow-forward" class="positive"}}
           {{/ionItem}}
 
-        {{/each}}
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image.jpeg" >
+            Yayan Gou
+            <br>
+            level: F
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image9.jpeg" >
+            Carlos Gonzalez
+            <br>
+            level: H
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image8.jpeg" >
+            William Swift
+            <br>
+            level: F
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image7.jpeg" >
+            Josh Tobias
+            <br>
+            level: H
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+        
+
+          {{#ionItem buttonRight=true class="item-icon-right itemDivider"}}
+            <b>Reads with fluency and phrasing</b>
+          {{/ionItem}}
+
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image2.jpeg" >
+            Victoria Kennedy
+            <br>
+            level: E
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image3.jpeg" >
+            Juan Jones
+            <br>
+            level: H
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+           {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image1.jpeg" >
+            Luc Pieron
+            <br>
+            level: J
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+          {{#ionItem buttonRight=true class="item-icon-right itemDivider"}}
+            <b>Retells and Summarizes</b>
+          {{/ionItem}}
+
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image4.jpeg" >
+            Malia Cordova
+            <br>
+            level: K
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/image5.jpeg" >
+            Nicole Guevara
+            <br>
+            level: C
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}          
+
+
+
+
+
+
+
+
       {{/ionList}}
     {{/ionContent}}
   {{/ionView}}
+
 
 </template>
