@@ -329,5 +329,19 @@
       "What happened in the story?"
     ]
   }
+
+  
+  {
+    level: "I"
+    icon: "/skills/skill1.png"
+
+    skill: "Makes Inferences"
+    hilite: "Make real life connections to characters and events."
+    points: [
+      "Think about something you know that helps you talk about what is happening."
+      "Relate, predict, or assume, then show me evidence on this page."
+    ]
+  }
+
   
 ]
