@@ -1,0 +1,24 @@
+<template name="cardList">
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Cards</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear" >back</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+  
+        {{#each cards}}
+          <h2>{{skill}}</h2>
+          <h3>{{hilite}}</h3>
+        {{/each}}
+
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>
