@@ -3,34 +3,62 @@
   <h1>interview</h1>
 
   {{#contentFor "headerTitle"}}
-    <h1 class="title">Interview</h1>
+  <h1 class="title">Interview</h1>
   {{/contentFor}}
 
   {{#contentFor "headerButtonRight"}}
-    <button class="button button-clear" data-ion-modal="_contactsNew">{{> ionIcon icon="ios-plus-empty"}}</button>
+  <button class="button button-clear" data-ion-modal="_contactsNew">{{> ionIcon icon="ios-plus-empty"}}</button>
   {{/contentFor}}
 
   {{#ionView}}
-    {{#ionContent}}
-      <h2>Student name</h2>
+  {{#ionContent}}
+  <div class="bar bar-header">
+    <div class="h2">Student name</div>
+    <div class="h4 title">Week #1</div>
+    <div class="button-bar">
+      <button class="button"></button>
+      <button class="button">K Level</button>
+    </div>
+  </div>
 
-      {{#ionList}}
-        <div class="topicCard">
-          <div class="title">my topic</div>
-          <div class="info">info here blah blah blah</div>
-        </div>
+  {{#ionList}}
+  <div class="card">
+    <div class="item item-divider">
+      <div class="title">My skill #1</div>
+    </div>
+    <div class="item item-text-wrap">
+      <div class="info">info here blah blah blah</div>
+    </div>
+    <div class="item item-divider">
+      <div class="grades">their past grades</div>
+    </div>
+  </div>
 
-        <div class="topicCard">
-          <div class="title">my topic</div>
-          <div class="info">info here blah blah blah</div>
-        </div>
+  <div class="card">
+    <div class="item item-divider">
+      <div class="title">My skill #2</div>
+    </div>
+    <div class="item item-text-wrap">
+      <div class="info">info here blah blah blah</div>
+    </div>
+    <div class="item item-divider">
+      <div class="grades">their past grades</div>
+    </div>
+  </div>
 
-        <div class="topicCard">
-          <div class="title">my topic</div>
-          <div class="info">info here blah blah blah</div>
-        </div>
+  <div class="card">
+    <div class="item item-divider">
+      <div class="title">My skill #3</div>
+    </div>
+    <div class="item item-text-wrap">
+      <div class="info">info here blah blah blah</div>
+    </div>
+    <div class="item item-divider">
+      <div class="grades">their past grades</div>
+    </div>
+  </div>
 
-      {{/ionList}}
-    {{/ionContent}}
+  {{/ionList}}
+  {{/ionContent}}
   {{/ionView}}
 </template>
