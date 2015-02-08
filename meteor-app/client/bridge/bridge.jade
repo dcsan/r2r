@@ -6,12 +6,6 @@ template(name="bridge")
   +ionView
     +ionContent
 
-      +ionItem
-        button#call1 call1
-
-      +ionItem
-        button#call2 call2
-
-      +ionItem
-        button#call3 call3
-
+      each bridgeItems
+        +ionItem
+          button(id=this.btnId) {{this.text}}

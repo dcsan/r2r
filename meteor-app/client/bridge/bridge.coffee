@@ -2,24 +2,26 @@ Template.bridge.helpers
   bridgeItems: ->
     [
       {
-        text: "new data"
-        path: "/data"
+        text: "showRecordingButton"
+        btnId: "btn1"
       }
 
       {
-        text: "bridge"
-        path: "/bridge"
+        text: "hideAudioWaveform"
+        btnId: "btn2"
       }
 
     ]
 
 
 Template.bridge.events
-  "click #call1": (evt) ->
+  "click #btn1": (evt) ->
     console.log("call1")
+    Android.showRecordingButton()
 
-  "click #call2": (evt) ->
+  "click #btn2": (evt) ->
     console.log("call2")
+    Android.hideAudioWaveform()
 
   "click #call3": (evt) ->
     console.log("call3")
