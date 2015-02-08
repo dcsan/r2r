@@ -4,6 +4,10 @@
     <h1 class="title">Students</h1>
   {{/contentFor}}
 
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index" text="back"}}
+  {{/contentFor}}
+
   {{#ionView}}
     {{#ionContent}}
       {{#ionList}}
