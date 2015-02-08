@@ -74,7 +74,7 @@
   
   {
     level: "G"
-    icon: "/skills/retell.jpg"
+    icon: "/skills/retell.png"
 
     skill: "Retells and Summarizes"
     hilite: "Look back through pages to think about what's happened."

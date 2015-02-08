@@ -1,4 +1,8 @@
 Template.admin.helpers
+
+  goalCount: ->
+    return Goals.find().count()
+
   menuItems: ->
     [
       {
@@ -12,3 +16,8 @@ Template.admin.helpers
       }
 
     ]
+
+Template.admin.events
+  'click #clearGoals': () ->
+    console.log("clearGoals")
+    Meteor.call('clearGoals')

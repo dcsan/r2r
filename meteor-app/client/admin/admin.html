@@ -4,12 +4,24 @@
     <h1 class="title">admin</h1>
   {{/contentFor}}
 
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index" text="back"}}
+  {{/contentFor}}
+
+
   {{#ionView}}
     {{#ionContent}}
       {{#ionList}}
-          {{#ionItem path="bridge" buttonRight=true avatar=true class="item-icon-right"}}
+        {{#ionItem path="bridge" buttonRight=true class="item-icon-right"}}
           bridge
-          {{/ionItem}}
+        {{/ionItem}}
+
+        {{#ionItem}}
+          <button class="button button-large button-positive" id='clearGoals'>
+            Clear Goals [ {{goalCount}} ]
+          </button>
+        {{/ionItem}}
+
 
       {{/ionList}}
     {{/ionContent}}

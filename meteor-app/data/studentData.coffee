@@ -2,22 +2,22 @@
 
   {
     name: "abby one"
-    icon: "pic1.jpg"
+    icon: "student1.png"
   }
 
   {
     name: "bob"
-    icon: "pic1.jpg"
+    icon: "student1.png"
   }
 
   {
     name: "charlie"
-    icon: "pic1.jpg"
+    icon: "student1.png"
   }
 
   {
     name: "daniel"
-    icon: "pic1.jpg"
+    icon: "student1.png"
   }
 
 ]

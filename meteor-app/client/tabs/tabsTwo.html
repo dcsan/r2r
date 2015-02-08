@@ -2,7 +2,24 @@
   {{> _tabsHeader}}
 
   {{#ionContent class="padding"}}
-  <h1>Tab 2</h1>
+
+  <div class="row">
+    <div class="col col-80 studentName">Goals</div>
+  </div>
+
+  <div class="list card">
+
+    {{#each goals}}
+      <a class="item item-icon-right">
+      {{skill}}
+      <i class="icon ion-backspace-outline goalItem" data-goalid="{{_id}}" ></i>
+      </a>
+    {{/each}}
+
+  </div>  
+
+  <a class="button icon-right ion-chevron-right button-calm">Send SMS</a>
+
   {{/ionContent}}
 
   {{> _tabs}}

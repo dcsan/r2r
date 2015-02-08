@@ -12,11 +12,13 @@
     {{#ionContent}}
       {{#ionList}}
         {{#each students}}
-          {{#ionItem buttonRight=true avatar=true class="item-icon-right"}}
-            <img src="{{avatarUrl}}">
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/{{icon}}" >
             {{name}}
             {{> ionIcon icon="ios-arrow-forward" class="positive"}}
           {{/ionItem}}
+
         {{/each}}
       {{/ionList}}
     {{/ionContent}}

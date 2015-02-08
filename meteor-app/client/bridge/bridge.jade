@@ -3,6 +3,9 @@ template(name="bridge")
   +contentFor "headerTitle"
     h1.title bridge
 
+  +contentFor "headerButtonLeft"
+    +ionNavBackButton(path='/admin' text='back')
+
   +ionView
     +ionContent
 

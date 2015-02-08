@@ -3,8 +3,60 @@
     {{> _tabsHeader}}
 
     {{#ionContent class="padding"}}
-      <h1>Tab 1</h1>
+
+      <div class="row">
+        <div class="col col-20">
+          <img src='/students/{{student.icon}}' class='largeIcon' />
+        </div>
+        <div class="col col-80 studentName">Irina Tagintseva</div>
+      </div>
+
+      <div class="button-bar bar-light">
+        <a class="button">Week 1</a>
+        <a class="button">Class 3</a>
+        <a class="button">Grade J</a>
+      </div>
+
+      {{#ionList}}
+        {{#each cards}}
+
+          <div class="card">
+
+            <div class="item item-divider">
+              <span class='skill'>{{skill}}</span>
+            </div>
+
+            <div class='row'>
+              <div class='col-20'>
+                <img src="{{icon}}" class="cardIcon">
+              </div>
+              <div class='col-80'>
+                {{hilite}}
+              </div>
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+              <div class="tab-item" id="fb1" data-cardid="{{_id}}">
+                <i class="icon ion-thumbsup"></i>
+                Good
+              </div>
+              <a class="tab-item" id="fb2" data-cardid="{{_id}}">
+                <i class="icon ion-ios-compose"></i>
+                Discuss
+              </a>
+              <a class="tab-item" id="fb3" data-cardid="{{_id}}">
+                <i class="icon ion-alert-circled"></i>
+                Goal
+              </a>
+            </div>
+
+          </div>
+
+        {{/each}}
+      {{/ionList}}
+
     {{/ionContent}}
+
 
     {{> _tabs}}
   {{/ionView}}
