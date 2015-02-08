@@ -18,7 +18,7 @@ Template.tabsOne.helpers
   sparkGraph: () ->
     max = 11
     min = 1
-    n = Math.floor(Math.random() * (max - min + 1)) + min;
+    n = Math.floor(Math.random() * (max - min + 1)) + min
     return "/images/sparks/spark#{n}.png"
 
 

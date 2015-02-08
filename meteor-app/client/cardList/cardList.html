@@ -11,6 +11,13 @@
 
   {{#ionView}}
     {{#ionContent}}
+
+      <div class="button-bar">
+        {{#each gradeStep}}
+          <a class="button" href="/cardList/{{this}}">{{this}}</a>
+        {{/each}}
+      </div>
+
       {{#ionList}}
   
         {{#each cards}}

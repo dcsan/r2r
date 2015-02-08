@@ -15,7 +15,6 @@ Router.map(function() {
   this.route('splash', {path: '/'});
   this.route('index');
   this.route('studentList');
-  this.route('cardList');
   this.route('studentAdd');
   this.route('interview');
   this.route('admin');
@@ -25,6 +24,19 @@ Router.map(function() {
   this.route('tabs.one', {path: '/tabs/one', layoutTemplate: 'tabsLayout'});
   this.route('tabs.two', {path: '/tabs/two', layoutTemplate: 'tabsLayout'});
   this.route('tabs.three', {path: '/tabs/three', layoutTemplate: 'tabsLayout'});
+
+  this.route('cardList', 
+  {
+    name: "cardList",
+    // path: "/cards/:level",
+    data: function() {
+      return {
+        cards: Cards.find({
+          level: this.params.level
+        })
+      }
+    }
+  })
 
   // this.route('forms', {
   //   data: function () {
