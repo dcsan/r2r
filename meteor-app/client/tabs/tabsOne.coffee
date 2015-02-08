@@ -1,3 +1,11 @@
+sendGrade = (grade) ->
+  console.log("sendGrade", grade)
+  try
+    Android.annotateAudioWaveform( grade ) 
+  catch
+    console.warn("failed to call Android evt annotateAudioWaveform")
+
+
 Template.tabsOne.helpers
   cards: ->
     c = Cards.find().fetch()
@@ -25,10 +33,16 @@ Template.tabsOne.events
     else
       Goals.remove(cardid)
 
+    sendGrade("C")
+
+
+
   'click #fb1': (evt) ->
     $(evt.target).toggleClass("balanced")
     $(evt.target).toggleClass("active")
+    sendGrade("A")
 
   'click #fb2': (evt) ->
     $(evt.target).toggleClass("energized")
     $(evt.target).toggleClass("active")
+    sendGrade("B")
