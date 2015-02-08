@@ -15,6 +15,8 @@ Router.map(function() {
   this.route('splash', {path: '/'});
   this.route('index');
   this.route('studentList');
+  this.route('priorityList');
+  this.route('levelList');
   this.route('studentAdd');
   this.route('interview');
   this.route('admin');

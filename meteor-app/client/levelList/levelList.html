@@ -1,0 +1,27 @@
+<template name="levelList">
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Students</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index" text="back"}}
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+        {{#each students}}
+
+          {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
+            <img src="/students/{{icon}}" >
+            {{name}}
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+
+        {{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>
