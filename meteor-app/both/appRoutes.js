@@ -28,7 +28,7 @@ Router.map(function() {
   this.route('cardList', 
   {
     name: "cardList",
-    // path: "/cards/:level",
+    path: "/cardList/:level?",
     data: function() {
       return {
         cards: Cards.find({
@@ -37,6 +37,23 @@ Router.map(function() {
       }
     }
   })
+
+  // this.route('cards', 
+  // {
+  //   name: "cards",
+  //   path: "/cards/:level",
+  //   data: function() {
+  //     cards = Cards.find({
+  //       level: this.params.level
+  //     }).fetch();
+
+  //     blob = {
+  //       cards: cards
+  //     }
+  //     console.log("cards", blob);
+  //     return(blob);
+  //   }
+  // })
 
   // this.route('forms', {
   //   data: function () {
