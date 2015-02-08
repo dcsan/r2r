@@ -8,12 +8,13 @@
       {{#ionList}}
 
         {{#ionItem}}
-          <canvas id="coverChart" width="500" height="300"></canvas>
+          <img src="/images/logo-stripe.png" class="logoStripe" />
         {{/ionItem}}
 
         {{#ionItem}}
-          <img src="/images/logo-stripe.png" class="logoStripe" />
+          <canvas id="coverChart" width="500" height="300"></canvas>
         {{/ionItem}}
+
 
 
         {{#ionItem path="studentList" iconLeft=true iconRight=true}}
@@ -25,12 +26,6 @@
         {{#ionItem path="priorityList" iconLeft=true iconRight=true}}
           {{> ionIcon icon="disc" class="positive"}}
           Priority List
-          {{> ionIcon icon="ios-arrow-right"}}
-        {{/ionItem}}
-
-        {{#ionItem path="levelList" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="stats-bars" class="positive"}}
-          Level List
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}}
 
