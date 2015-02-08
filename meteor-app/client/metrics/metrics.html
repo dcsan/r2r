@@ -1,0 +1,62 @@
+<template name="metrics">
+
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Students</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index" text="back"}}
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+
+
+    <div class="list card">
+
+      <a href='/index'>
+        <div class="item">
+          <h2>Graph One</h2>
+        </div>
+
+        <div class="item item-image">
+          <img src='/charts/chart1.png' />
+        </div>
+
+        <div class="item item-icon-left assertive">
+          <i class="icon ion-music-note"></i>
+          Let's go!
+        </div>
+
+      </a>
+
+    </div>
+
+
+  <div class="list card">
+
+      <a href='/index'>
+        <div class="item">
+          <h2>Graph Two</h2>
+        </div>
+
+        <div class="item item-image">
+          <img src='/charts/chart2.png' />
+        </div>
+
+        <div class="item item-icon-left assertive">
+          <i class="icon ion-music-note"></i>
+          Let's go!
+        </div>
+
+      </a>
+
+    </div>
+
+
+    {{/ionContent}}
+  {{/ionView}}
+
+
+</template>

@@ -12,13 +12,15 @@ Meteor.startup(function () {
 });
 
 Router.map(function() {
-  this.route('index', {path: '/'});
+  this.route('splash', {path: '/'});
+  this.route('index');
   this.route('studentList');
   this.route('cardList');
   this.route('studentAdd');
   this.route('interview');
   this.route('admin');
   this.route('bridge');
+  this.route('metrics');
 
   this.route('tabs.one', {path: '/tabs/one', layoutTemplate: 'tabsLayout'});
   this.route('tabs.two', {path: '/tabs/two', layoutTemplate: 'tabsLayout'});
