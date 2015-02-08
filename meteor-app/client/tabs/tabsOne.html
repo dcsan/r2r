@@ -22,8 +22,8 @@
 
           <div class="card topLine">
 
-            <div class="item item-divider">
-              <span class='skill'>{{skill}}</span>
+            <div class="item item-divider skillName">
+              <div class='skillName'>{{skill}}</div>
             </div>
 
             <div class='row'>
@@ -36,6 +36,11 @@
             </div>
 
             <div class="item tabs tabs-secondary tabs-icon-left">
+              <div class="tab-item" id="fb1" data-cardid="{{_id}}">
+                <img src="{{sparkGraph}}"/>
+                
+              </div>
+
               <div class="tab-item" id="fb1" data-cardid="{{_id}}">
                 <i class="icon ion-thumbsup"></i>
                 Good

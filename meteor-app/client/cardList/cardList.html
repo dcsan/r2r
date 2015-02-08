@@ -14,9 +14,17 @@
       {{#ionList}}
   
         {{#each cards}}
-        <div class="list card">
-          <h2>{{skill}}</h2>
-          <h3>{{hilite}}</h3>
+
+        <div class="card">
+          <div class="item button icon-left ion-star button-royal button-full divider">
+            {{skill}}
+          </div>
+          <div class="item item-text-wrap">
+            <h2>{{hilite}}</h2>
+            {{#each points}}
+              <p>{{this}}</p>
+            {{/each}}
+          </div>
         </div>
         {{/each}}
 

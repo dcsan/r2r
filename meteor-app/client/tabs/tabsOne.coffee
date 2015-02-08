@@ -1,7 +1,7 @@
 sendGrade = (grade) ->
   console.log("sendGrade", grade)
   try
-    Android.annotateAudioWaveform( grade ) 
+    Android.annotateAudioWaveform( grade )
   catch
     console.warn("failed to call Android evt annotateAudioWaveform")
 
@@ -14,6 +14,12 @@ Template.tabsOne.helpers
 
   student: ->
     s = Students.findOne()
+
+  sparkGraph: () ->
+    max = 11
+    min = 1
+    n = Math.floor(Math.random() * (max - min + 1)) + min;
+    return "/images/sparks/spark#{n}.png"
 
 
 Template.tabsOne.events
