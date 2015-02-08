@@ -22,13 +22,13 @@
       </div>
 
       {{#ionList}}
-        {{#each students}}
+        {{#each hitlist}}
 
           {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
             <img src="/students/{{icon}}" >
             {{name}}
             <br>
-            {{level}}
+            level: {{level}}
             {{> ionIcon icon="ios-arrow-forward" class="positive"}}
           {{/ionItem}}
 
