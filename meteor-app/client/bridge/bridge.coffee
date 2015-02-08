@@ -17,11 +17,11 @@ Template.bridge.helpers
 Template.bridge.events
   "click #btn1": (evt) ->
     console.log("call1")
-    Android.showRecordingButton()
+    Android.showRecordingButton("btn1")
 
   "click #btn2": (evt) ->
     console.log("call2")
-    Android.hideAudioWaveform()
+    Android.hideAudioWaveform("btn2")
 
   "click #call3": (evt) ->
     console.log("call3")
