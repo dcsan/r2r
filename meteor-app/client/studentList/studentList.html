@@ -10,12 +10,20 @@
 
   {{#ionView}}
     {{#ionContent}}
+
+      <div class="button-bar">
+        <a class="button" id="sortName">Name</a>
+        <a class="button" id="sortLevel">Level</a>
+      </div>
+
       {{#ionList}}
         {{#each students}}
 
           {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
             <img src="/students/{{icon}}" >
             {{name}}
+            <br>
+            {{level}}
             {{> ionIcon icon="ios-arrow-forward" class="positive"}}
           {{/ionItem}}
 
