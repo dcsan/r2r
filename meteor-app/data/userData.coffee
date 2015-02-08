@@ -1,4 +1,4 @@
-@cardData = [
+@studentData = [
 
   {
     name: "abby one"
