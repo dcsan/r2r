@@ -10,6 +10,11 @@
   <button class="button button-clear" data-ion-modal="_contactsNew">{{> ionIcon icon="ios-plus-empty"}}</button>
   {{/contentFor}}
 
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index" text="back"}}
+  {{/contentFor}}
+
+
   {{#ionView}}
   {{#ionContent}}
   <!-- <div class="bar bar-header">
