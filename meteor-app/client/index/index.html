@@ -11,9 +11,26 @@
           <canvas id="coverChart" width="500" height="300"></canvas>
         {{/ionItem}}
 
+        {{#ionItem}}
+          <img src="/images/logo-stripe.png" class="logoStripe" />
+        {{/ionItem}}
+
+
         {{#ionItem path="studentList" iconLeft=true iconRight=true}}
           {{> ionIcon icon="ios-people" class="positive"}}
           Student List
+          {{> ionIcon icon="ios-arrow-right"}}
+        {{/ionItem}}
+
+        {{#ionItem path="priorityList" iconLeft=true iconRight=true}}
+          {{> ionIcon icon="ios-people" class="positive"}}
+          Priority List
+          {{> ionIcon icon="ios-arrow-right"}}
+        {{/ionItem}}
+
+        {{#ionItem path="levelList" iconLeft=true iconRight=true}}
+          {{> ionIcon icon="ios-people" class="positive"}}
+          Level List
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}}
 

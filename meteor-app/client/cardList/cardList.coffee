@@ -1,9 +1,12 @@
 Template.cardList.helpers
-  
+
   cards: ->
-    c = Cards.find().fetch()
-    console.log("cards", c)
-    return c
+    console.log("cardList", this)
+    # c = Cards.find().fetch()
+    # console.log("cards", c)
+    return this.cards
 
   gradeStep: ->
-    ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+    ["C", "D", "E", "F", "G", "H", "I", "J"]
+
+

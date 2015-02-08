@@ -1,2 +1,2 @@
 Template.index.rendered = () ->
-  Charty.drawChart("coverChart")
+  Charty.drawChart("coverChart", 250)

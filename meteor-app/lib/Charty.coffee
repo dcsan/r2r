@@ -4,7 +4,8 @@ Charty.updateChart = () ->
   lastCount = Goals.find().count()
   chart1.update()
 
-Charty.drawChart = (elemName) ->
+Charty.drawChart = (elemName, height) ->
+  height ?= 300
   console.log("show chart")
   chart = document.getElementById(elemName)
   chart.width = window.innerWidth - 20
