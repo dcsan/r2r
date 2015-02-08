@@ -9,14 +9,15 @@
 
       {{#each goals}}
         <a class="item item-icon-right">
-        {{skill}}
+        {{hilite}}
         <i class="icon ion-backspace-outline goalItem" data-goalid="{{_id}}" ></i>
         </a>
       {{/each}}
 
     </div>
 
-    <a class="button icon-right button-full ion-chevron-right button-calm">Send SMS</a>
+    <a  class="button icon-right button-full ion-chevron-right button-calm"
+        data-ion-modal="_myModal">Send SMS</a>
 
   {{/ionContent}}
 
