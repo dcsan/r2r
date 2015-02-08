@@ -1,4 +1,4 @@
-<template name="studentList">
+<template name="levelList">
 
   {{#contentFor "headerTitle"}}
     <h1 class="title">Students</h1>
@@ -10,20 +10,12 @@
 
   {{#ionView}}
     {{#ionContent}}
-
-      <div class="button-bar">
-        <a class="button" id="sortName">Name</a>
-        <a class="button" id="sortLevel">Level</a>
-      </div>
-
       {{#ionList}}
-        {{#each hitlist}}
+        {{#each students}}
 
           {{#ionItem buttonRight=true avatar=true path="tabs.one" class="item-icon-right"}}
             <img src="/students/{{icon}}" >
             {{name}}
-            <br>
-            level: {{level}}
             {{> ionIcon icon="ios-arrow-forward" class="positive"}}
           {{/ionItem}}
 

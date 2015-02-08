@@ -1,9 +1,141 @@
 @cardData = [
 
   {
-    level: "G"
+    level: "A"
+    icon: "/skills/skill1.png"
+    skill: "Begins to self-correct at point of error"
+    hilite: "Read this word again and see if you can fix it."
+    points: [
+      "Something wasn't quite right. Go back and try again."
+      "You fixed this word immediately, good job! Tell me how you did that."
+    ]
+  }
+
+  {
+    level: "B"
+    icon: "/skills/skill1.png"
+    skill: "Begins to self-correct at point of error"
+    hilite: "Read this word again and see if you can fix it."
+    points: [
+      "Something wasn't quite right. Go back and try again."
+      "You fixed this word immediately, good job! Tell me how you did that."
+    ]
+  }
+
+  {
+    level: "C"
+    icon: "/skills/skill1.png"
+    skill: "Begins to self-correct at point of error"
+    hilite: "Read this word again and see if you can fix it."
+    points: [
+      "Something wasn't quite right. Go back and try again."
+      "You fixed this word immediately, good job! Tell me how you did that."
+    ]
+  }
+
+  {
+    level: "C"
     icon: "/skills/skill1.png"
 
+    skill: "Reads with fluency and phrasing"
+    hilite: "Make your reading sound like you're telling a story."
+    points: [
+      "Use letter/sound analysis to solve the word."
+      "Remember: tell it like this is the scary/funny/silly part of the story."
+    ]
+  }
+
+  {
+    level: "D"
+    icon: "/skills/skill1.png"
+
+    skill: "Accumulates content and events in mind"
+    hilite: "Stop and look back through the pages. What's happened so far?"
+    points: [
+      "Stop the child at the end of several paragraphs and ask [what's happening]?"
+    ]
+  }
+  
+  {
+    level: "D"
+    icon: "/skills/skill1.png"
+
+    skill: "Begins to self-correct at point of error"
+    hilite: "Something wasn't quite right. Go back and see if you can fix it."
+    points: [
+      "Read this word again and see if you can fix it."
+      "You fixed this word immediately, good job! Tell me how you did that."
+    ]
+  }
+
+
+  
+  {
+    level: "E"
+    icon: "/skills/skill1.png"
+
+    skill: "Makes Inferences"
+    hilite: "Make real life connections to characters and events."
+    points: [
+      "Think about something you know that helps you talk about what is happening."
+      "Relate, predict, or assume, then show me evidence on this page."
+    ]
+  }
+  
+  {
+    level: "E"
+    icon: "/skills/skill1.png"
+
+    skill: "Reads with fluency and phrasing"
+    hilite: "Use the punctuation in this part to help you read. Read in phrases."
+    points: [
+      "Make your reading sound like you're telling a story."
+      "Remember: tell it like this is the scary/funny/silly part of the story."
+    ]
+  }
+  
+  {
+    level: "E"
+    icon: "/skills/skill1.png"
+
+    skill: "Retells and Summarizes"
+    hilite: "Can you articulate the big event?"
+    points: [
+      "Look back through pages to think about what's happened."
+      "What happened in the story?"
+    ]
+  }
+
+
+  {
+    level: "F"
+    icon: "/skills/skill1.png"
+
+    skill: "Makes Inferences"
+    hilite: "Make real life connections to characters and events."
+    points: [
+      "Think about something you know that helps you talk about what is happening."
+      "Relate, predict, or assume, then show me evidence on this page."
+    ]
+  }
+  
+  {
+    level: "F"
+    icon: "/skills/skill1.png"
+
+    skill: "Reads with fluency and phrasing"
+    hilite: "Use the punctuation in this part to help you read. Read in phrases."
+    points: [
+      "Make your reading sound like you're telling a story."
+      "Remember: tell it like this is the scary/funny/silly part of the story."
+    ]
+  }
+
+
+  # ------- end of fake data
+
+  {
+    level: "G"
     icon: "/skills/skill1.png"
     skill: "Begins to self-correct at point of error"
     hilite: "Read this word again and see if you can fix it."
@@ -15,7 +147,7 @@
 
   {
     level: "G"
-    icon: "/skills/skill1.png"
+    icon: "/skills/skill2.png"
 
     skill: "Comments on events or characters"
     hilite: "How does this story/character make you feel? What / Who in your life makes you feel this way?"
@@ -197,5 +329,19 @@
       "What happened in the story?"
     ]
   }
+
+  
+  {
+    level: "I"
+    icon: "/skills/skill1.png"
+
+    skill: "Makes Inferences"
+    hilite: "Make real life connections to characters and events."
+    points: [
+      "Think about something you know that helps you talk about what is happening."
+      "Relate, predict, or assume, then show me evidence on this page."
+    ]
+  }
+
   
 ]

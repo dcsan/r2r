@@ -15,6 +15,8 @@ Router.map(function() {
   this.route('splash', {path: '/'});
   this.route('index');
   this.route('studentList');
+  this.route('priorityList');
+  this.route('levelList');
   this.route('studentAdd');
   this.route('interview');
   this.route('admin');
@@ -28,7 +30,7 @@ Router.map(function() {
   this.route('cardList', 
   {
     name: "cardList",
-    // path: "/cards/:level",
+    path: "/cardList/:level?",
     data: function() {
       return {
         cards: Cards.find({
@@ -37,6 +39,23 @@ Router.map(function() {
       }
     }
   })
+
+  // this.route('cards', 
+  // {
+  //   name: "cards",
+  //   path: "/cards/:level",
+  //   data: function() {
+  //     cards = Cards.find({
+  //       level: this.params.level
+  //     }).fetch();
+
+  //     blob = {
+  //       cards: cards
+  //     }
+  //     console.log("cards", blob);
+  //     return(blob);
+  //   }
+  // })
 
   // this.route('forms', {
   //   data: function () {
