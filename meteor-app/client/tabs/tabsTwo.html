@@ -3,22 +3,20 @@
 
   {{#ionContent class="padding"}}
 
-  <div class="row">
-    <div class="col col-80 studentName">Goals</div>
-  </div>
+    <div class="studentName">Goals</div>
 
-  <div class="list card">
+    <div class="list card">
 
-    {{#each goals}}
-      <a class="item item-icon-right">
-      {{skill}}
-      <i class="icon ion-backspace-outline goalItem" data-goalid="{{_id}}" ></i>
-      </a>
-    {{/each}}
+      {{#each goals}}
+        <a class="item item-icon-right">
+        {{skill}}
+        <i class="icon ion-backspace-outline goalItem" data-goalid="{{_id}}" ></i>
+        </a>
+      {{/each}}
 
-  </div>  
+    </div>
 
-  <a class="button icon-right ion-chevron-right button-calm">Send SMS</a>
+    <a class="button icon-right button-full ion-chevron-right button-calm">Send SMS</a>
 
   {{/ionContent}}
 
