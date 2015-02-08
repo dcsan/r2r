@@ -1,0 +1,21 @@
+<template name="studentList">
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Students</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+        {{#each students}}
+          {{#ionItem buttonRight=true avatar=true class="item-icon-right"}}
+            <img src="{{avatarUrl}}">
+            {{name}}
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+        {{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>
