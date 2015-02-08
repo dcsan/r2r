@@ -1,12 +1,22 @@
+hitlist = new ReactiveVar()
 sorter = {sort: {name: 1}}
 
 resort = (s) ->
   console.log("resort", sorter)
+  statData = Students.find({}, sorter).fetch()
+  hitlist.set(statData)
+
+Template.studentList.rendered = () ->
+  resort()
+
 
 Template.studentList.helpers
 
-  students: ->
-    return Students.find({}, sorter).fetch()
+  # students: ->
+  #   return(resort() )
+
+  hitlist: ->
+    return hitlist.get()
 
 
 Template.studentList.events
