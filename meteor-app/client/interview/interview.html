@@ -12,53 +12,142 @@
 
   {{#ionView}}
   {{#ionContent}}
-  <div class="bar bar-header">
-    <div class="h2">Student name</div>
-    <div class="h4 title">Week #1</div>
-    <div class="button-bar">
-      <button class="button"></button>
-      <button class="button">K Level</button>
+  <!-- <div class="bar bar-header">
+  <div class="h1">Student name</div>
+  <div class="h4 title">Week #1</div>
+
+  <div class="item tabs-icon-left">
+  <a class="tab-item" href="#">
+  <i class="icon ion-share"></i>
+  Share
+</a>
+<button class="button">K Level</button>
+</div> -->
+
+<ion-header-bar align-title="left" class="bar-positive">
+  <div class="buttons">
+    <button class="button">Left Button</button>
+    <a class="button icon-right ion-chevron-right button-calm">Level K</a>
+  </div>
+  <h1 class="title">Irina Tagintseva</h1>
+</ion-header-bar>
+<ion-content>
+  Week 1
+</ion-content>
+
+{{#ionList}}
+<div class="list card">
+  <div class="item">
+    <h2>My skill #1</h2>
+    <label class="checkbox checkbox-positive">
+      <input type="checkbox">
+    </label>
+  </div>
+  <div class="item item-text-wrap">
+    <div class="info">
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #1
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #2
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #3
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #4
+      </a>
+
     </div>
   </div>
+  <div class="item item-divider">
+    <div class="grades">their past grades</div>
+  </div>
+</div>
 
-  {{#ionList}}
-  <div class="card">
-    <div class="item item-divider">
-      <div class="title">My skill #1</div>
-    </div>
-    <div class="item item-text-wrap">
-      <div class="info">info here blah blah blah</div>
-    </div>
-    <div class="item item-divider">
-      <div class="grades">their past grades</div>
+<div class="list card">
+  <div class="item">
+    <h2>My skill #2</h2>
+    <label class="checkbox checkbox-positive">
+      <input type="checkbox">
+    </label>
+  </div>
+  <div class="item item-text-wrap">
+    <div class="info">
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #1
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #2
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #3
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #4
+      </a>
+
     </div>
   </div>
+  <div class="item item-divider">
+    <div class="grades">their past grades</div>
+  </div>
+</div>
 
-  <div class="card">
-    <div class="item item-divider">
-      <div class="title">My skill #2</div>
-    </div>
-    <div class="item item-text-wrap">
-      <div class="info">info here blah blah blah</div>
-    </div>
-    <div class="item item-divider">
-      <div class="grades">their past grades</div>
+<div class="list card">
+  <div class="item">
+    <h2>My skill #3</h2>
+    <label class="checkbox checkbox-positive">
+      <input type="checkbox">
+    </label>
+  </div>
+  <div class="item item-text-wrap">
+    <div class="info">
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #1
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #2
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #3
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon"></i>
+        Teaching point #4
+      </a>
+
     </div>
   </div>
-
-  <div class="card">
-    <div class="item item-divider">
-      <div class="title">My skill #3</div>
-    </div>
-    <div class="item item-text-wrap">
-      <div class="info">info here blah blah blah</div>
-    </div>
-    <div class="item item-divider">
-      <div class="grades">their past grades</div>
-    </div>
+  <div class="item item-divider">
+    <div class="grades">their past grades</div>
   </div>
+</div>
 
-  {{/ionList}}
-  {{/ionContent}}
-  {{/ionView}}
+{{/ionList}}
+{{/ionContent}}
+{{/ionView}}
 </template>
