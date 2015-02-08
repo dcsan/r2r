@@ -17,6 +17,8 @@ Router.map(function() {
   this.route('cardList');
   this.route('studentAdd');
   this.route('interview');
+  this.route('admin');
+  this.route('bridge');
   // this.route('forms', {
   //   data: function () {
   //     return {

@@ -1,0 +1,12 @@
+template(name="bridge")
+
+  +contentFor "headerTitle"
+    h1.title admin
+
+  +ionView
+    +ionContent
+      +ionList
+
+        //- each bridgeItems
+        //-   +ionItem(path=this.path)
+        //-     p {{this.text}}

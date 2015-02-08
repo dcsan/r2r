@@ -1,15 +1,45 @@
 template(name="admin")
-  h1 admin
 
-  ul
-    li
-      a(href="/studentList") studentList
 
-  ul
-    li
-      a(href="/studentAdd") studentAdd
+  +contentFor "headerTitle"
+    h1.title admin
 
-  ul
-    li
-      a(href="/interview") interview
+  +contentFor "headerButtonLeft"
+    +ionNavBackButton(path="index" text="back")
 
+  +ionView
+    +ionContent
+      +ionList
+
+        each menuItems
+          +ionItem(path=path buttonRight=true iconRight=true class="item-icon-right")
+            p {{this.text}} > {{this.path}}
+            +ionIcon(icon="ios-arrow-right")
+
+  //- ul
+  //-   li
+  //-     a(href="/studentList") studentList
+
+  //- ul
+  //-   li
+  //-     a(href="/studentAdd") studentAdd
+
+  //- ul
+  //-   li
+  //-     a(href="/interview") interview
+
+
+
+  //- {{#ionView}}
+  //-   {{#ionContent}}
+  //-     {{#ionList}}
+  //-       {{#each contacts}}
+  //-         {{#ionItem path="contacts.show" buttonRight=true avatar=true class="item-icon-right"}}
+  //-           <img src="{{avatarUrl}}">
+  //-           {{name.first}} {{name.last}}
+  //-           {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+  //-         {{/ionItem}}
+  //-       {{/each}}
+  //-     {{/ionList}}
+  //-   {{/ionContent}}
+  //- {{/ionView}}
