@@ -21,5 +21,8 @@
       "path": "../docs"
     },
 
+    {
+      "path": "../meteor-app"
+    },
   ]
 }
