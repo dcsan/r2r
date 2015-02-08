@@ -1,27 +1,54 @@
 @studentData = [
 
   {
-    name: "Irina Tagintseva"
-    icon: "student1.png"
-    level: "J"
+    name: "Arianna Morrison"
+    icon: "image6.jpeg"
   }
 
   {
-    name: "Bob Grant"
-    icon: "student2.png"
-    level: "J"
+    name: "Carlos Gonzalez"
+    icon: "image9.jpeg"
   }
 
   {
-    name: "Charlie Cheever"
-    icon: "student2.png"
-    level: "H"
+    name: "Josh Tobias"
+    icon: "image7.jpeg"
   }
 
   {
-    name: "Daniel Long"
-    icon: "student2.png"
-    level: "I"
+    name: "Juan Jones"
+    icon: "image3.jpeg"
   }
+
+  {
+    name: "Luc Pieron"
+    icon: "image1.jpeg"
+  }
+
+  {
+    name: "Malia Cordova"
+    icon: "image4.jpeg"
+  }
+
+  {
+    name: "Nicole Guevara"
+    icon: "image5.jpeg"
+  }
+
+  {
+    name: "Victoria Kennedy"
+    icon: "image2.jpeg"
+  }
+
+  {
+    name: "William Swift"
+    icon: "image8.jpeg"
+  }
+
+  {
+    name: "Yayan Gou"
+    icon: "image.jpeg"
+  }
+
 
 ]
