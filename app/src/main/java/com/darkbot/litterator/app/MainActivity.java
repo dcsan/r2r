@@ -2,6 +2,7 @@ package com.darkbot.litterator.app;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
@@ -21,8 +22,13 @@ public class MainActivity extends Activity {
     private String recordingFileLocation = null;
 
     public WebView litWebView;
-    public FloatingActionButton fab;
+    public FloatingActionButton fabRecord;
+    public FloatingActionButton fabPlay;
+    Drawable stopButton;
+    Drawable playButton;
+
     private boolean startRecording = true;
+    private boolean playing = true;
     AudioManager audioManager;
 
     public MainActivity() {
@@ -37,7 +43,9 @@ public class MainActivity extends Activity {
         audioManager = new AudioManager();
 
         litWebView = (WebView) findViewById(R.id.litWebView);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fabRecord = (FloatingActionButton) findViewById(R.id.fabRecord);
+        fabPlay = (FloatingActionButton) findViewById(R.id.fabPlay);
+
 
         litWebView.loadUrl("http://r2r.meteor.com");
         litWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
@@ -46,23 +54,54 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
 
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        stopButton = getResources().getDrawable(R.drawable.ic_stop_btn);
+        playButton = getResources().getDrawable(R.drawable.ic_playbtn);
+
+
+
+        fabRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startRecording){
                     audioManager.startRecording();
-                    fab.setColorNormal(Color.GREEN);
+                    fabRecord.setColorNormal(Color.GREEN);
 
                 }else{
                  audioManager.stopRecording();
-                    fab.setColorNormal(Color.parseColor("#ff5722"));
+                    fabRecord.setColorNormal(Color.parseColor("#ff5722"));
                 }
 
 
                 startRecording = !startRecording;
             }
         });
+
+
+        fabPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (playing) {
+                    audioManager.startPlaying();
+                    fabPlay.setColorNormal(Color.GREEN);
+                    fabPlay.setImageDrawable(stopButton);
+                    fabRecord.setColorNormal(Color.GRAY);
+                    fabRecord.setEnabled(false);
+                } else {
+                    audioManager.stopPlaying();
+                    fabPlay.setColorNormal(Color.parseColor("#ff5722"));
+                    fabPlay.setImageDrawable(playButton);
+                    fabRecord.setEnabled(true);
+                }
+
+                playing = !playing;
+            }
+        });
+
+
     }
+
+
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

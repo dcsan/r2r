@@ -8,19 +8,30 @@
     <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/litWebView"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
+            android:id="@+id/litWebView"/>
+
 
     <com.melnykov.fab.FloatingActionButton
-            android:id="@+id/fab"
+            android:id="@+id/fabRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_mic_4"
+            fab:fab_colorNormal="#ff5722"
+            fab:fab_colorPressed="#ff3000"
+            />
+
+    <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fabPlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
-            android:src="@drawable/ic_mic_4"
+            android:src="@drawable/ic_playbtn"
             fab:fab_colorNormal="#ff5722"
             fab:fab_colorPressed="#ff3000"
-             />
+            />
+
 </FrameLayout>
