@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"student",
+				"studentList"
+			],
+			[
+				"sort",
+				"sorter"
+			],
+			[
+				"brode",
+				"border-radius"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"reloa",
+				"reloadStudents"
+			],
+			[
+				"head",
+				"headerButtonLeft"
+			],
+			[
 				"ios-",
 				"ios-arrow-right"
 			],
@@ -490,66 +514,22 @@
 			[
 				"Deck",
 				"DeckClass"
-			],
-			[
-				"cname",
-				"cnameList"
-			],
-			[
-				"use",
-				"useItem"
-			],
-			[
-				"reload",
-				"reloadCB"
-			],
-			[
-				"show",
-				"showDeck"
-			],
-			[
-				"backgor",
-				"background-color"
-			],
-			[
-				"card",
-				"cardify"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.jade",
-			"settings":
-			{
-				"buffer_size": 245,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.html",
-			"settings":
-			{
-				"buffer_size": 360,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.coffee",
-			"settings":
-			{
-				"buffer_size": 243,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xCoffee.sublime-build",
 	"command_palette":
 	{
-		"height": 187.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"java",
 				"Javascript Beautify"
@@ -695,7 +675,7 @@
 				"SublimeLinter: Disable Linter"
 			]
 		],
-		"width": 521.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -718,35 +698,94 @@
 	"expanded_folders":
 	[
 		"/Users/dc/dev/ref/r2r/meteor-app",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor",
 		"/Users/dc/dev/ref/r2r/meteor-app/client",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/admin",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/contacts",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/interview",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/index",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/layouts",
 		"/Users/dc/dev/ref/r2r/meteor-app/client/studentList",
-		"/Users/dc/dev/ref/r2r/meteor-app/data",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/widgets",
 		"/Users/dc/dev/ref/r2r/meteor-app/lib"
 	],
 	"file_history":
 	[
 		"/Users/dc/dev/ref/r2r/meteor-app/client/index/index.html",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.jade",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.Xjade",
-		"/Users/dc/dev/ref/r2r/meteor-app/both/appRoutes.js",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.coffee",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/cardList/cardList.html",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/interview/interview.html",
-		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/webapp/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/test/simple/test-stream2-readable-legacy-drain.js",
-		"/Users/dc/dev/ref/r2r/meteor-app/data/cardData.coffee",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/cardList/cardList.coffee",
-		"/Users/dc/dev/ref/r2r/meteor-app/lib/Cards.coffee",
-		"/Users/dc/dev/ref/r2r/meteor-app/data/userData.coffee",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/studentList/studentList.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsOne.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/widgets/audioWidget.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/widgets/audioWidget.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/widgets/audioWidget.styl",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsOne.coffee",
 		"/Users/dc/dev/ref/r2r/meteor-app/client/studentList/studentList.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/splash/splash.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/priorityList/priorityList.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/studentList/studentList.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/priorityList/priorityList.coffee",
+		"/Users/dc/dev/ref/r2r/app/proguard-rules.pro",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/packages",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/studentAdd/studentAdd.jade",
+		"/Users/dc/dev/ref/r2r/meteor-app/data/studentData.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/webapp/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/lib/_stream_transform.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/layouts/shared.styl",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/index/index.styl",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/index/index.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/metrics/metrics.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/layouts/metatags.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/versions-dc",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/versions",
+		"/Users/dc/dev/ref/r2r/meteor-app/lib/Charty.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/packages/callback-hook.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/data/cardData.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/levelList/levelList.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/lib/Students.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/node_modules/source-map-support/node_modules/source-map/build/suffix-utils.jsm",
+		"/Users/dc/dev/ref/r2r/meteor-app/both/appRoutes.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/levelList/levelList.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/cardList/cardList.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/cardList/cardList.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/memoizee/node_modules/event-emitter/lib/all-off.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/minifiers/node_modules/uglify-js/node_modules/optimist/example/usage-options.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/packages/ordered-dict.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsThree.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/interview/interview.styl",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsThree.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsTwo.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsTwo.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/interview/interview.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/mongo/node_modules/mongodb/lib/mongodb/auth/mongodb_x509.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/web.browser/app/lib/Cards.coffee.js.map",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/app/lib/Cards.coffee.js.map",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/web.browser/app/lib/Cards.coffee.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/app/lib/Cards.coffee.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/lib/Cards.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/packages/insecure.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/mongo/node_modules/mongodb/docs/articles/AnIntroductionTo1_1And2_2.md",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/.bin/strip-ansi",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/node_modules/fibers/test/stack-overflow.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/_myModal.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/interview/interview.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/data/userData.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.jade",
+		"/Users/dc/dev/ref/r2r/meteor-app/lib/Goals.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.coffee",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/_tabsHeader.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsLayout.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/tabsLayout.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/node_modules/source-map-support/node_modules/source-map/test/source-map/test-api.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/node_modules/source-map-support/node_modules/source-map/test/source-map/test-array-set.js",
+		"/Users/dc/dev/ref/r2r/bin/test.sh",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/contacts/contacts.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/tabs/_tabs.html",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/packages/softwarerero_accounts-t9n.js",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/shell.sock",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.coffee",
+		"/Users/dc/dev/ref/r2r/app/build.gradle",
+		"/Users/dc/dev/ref/r2r/bin/merge-to-edaan.sh",
+		"/Users/dc/dev/ref/r2r/bin/merge-from-edaan.sh",
+		"/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.Xjade",
+		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/npm/webapp/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/test/simple/test-stream2-readable-legacy-drain.js",
 		"/Users/dc/dev/ref/r2r/meteor-app/stylesheets/app.scss",
 		"/Users/dc/dev/ref/r2r/meteor-app/.meteor/local/build/programs/server/packages/accounts-password.js",
 		"/Users/dc/dev/ref/r2r/bin/atquery.sh",
-		"/Users/dc/dev/ref/r2r/meteor-app/client/layouts/metatags.html",
 		"/Users/dc/dev/ref/r2r/meteor-app/lib/Topics.coffee",
 		"/Users/dc/dev/ref/r2r/docs/r2r.sublime-project",
 		"/Users/dc/dev/ref/r2r/bin/deploy.sh",
@@ -796,71 +835,11 @@
 		"/Users/dc/dev/shumi/chatU/app/packages/ribot/lib/CRibot.coffee",
 		"/Users/dc/dev/shumi/chatU/docs/todo-william.txt",
 		"/Users/dc/dev/shumi/chatU/app/client/layouts/sidemenu/meta.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/question.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/question.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/question.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/lib/splitLib.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/dclib/lib/dclib.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/dclib/client/global-ui-helpers.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/game/game.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/streamer/tests/MsgParser.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/bubbles.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/showInput.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/widgets.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/chatline.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/streamer/client/stream/stream.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/streamer/client/stream/stream.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost/street.rive",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/quiz.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/blanks.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/quiz.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/blanks.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/dclib/package.js",
-		"/Users/dc/dev/shumi/chatU/app/.meteor/.finished-upgraders",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/continue.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/continue.jade",
-		"/Users/dc/dev/shumi/chatU/app/public/assets/newco/layouts/two-shot-office.html",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/caption.styl",
-		"/Users/dc/dev/shumi/chatU/app/data/sideMenuItems.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/userInput.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/sidemenu/sidemenu.html",
-		"/Users/dc/dev/shumi/chatU/app/client/debug/debug.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/debug/debug.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/sidemenu/sidemenu.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/debug/debug.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/sidemenu/base.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/vendor/rivescript-dist.js",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/vendor/rivescript-js/docs/docs.css",
-		"/Users/dc/dev/shumi/chatU/app/client/top/top.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/vendor/rivescript-js/bin/pull-upstream",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost/notes.txt",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/vendor/rivescript-js/lib/temp.js",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/docs/brain/javascript.rive",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/vendor/rivescript.js",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/caption.jade",
-		"/Users/dc/dev/shumi/chatU/app/lib/CPlayer.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/twoshot.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/twoChoice.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost/could-should.rive",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/continue.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/docs/aiden/logic.rs",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/docs/aiden/aiden-skeptic.rs",
-		"/Users/dc/dev/shumi/chatU/app/data/stories/lost/inspector.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/blanks.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/twoChoice.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost/random.rive",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost/backpack.rive",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost/biker.rive",
-		"/Users/dc/dev/shumi/chatU/app/packages/ribot/data/lost/complete.rive",
-		"/Users/dc/dev/shumi/chatU/app/config/config.json",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/backpack.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/backpack.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/inlinetip.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/inlinetip.jade"
+		"/Users/dc/dev/shumi/chatU/app/client/widgets/question.coffee"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -1002,6 +981,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ionic",
+			"pic1.jpg",
+			".jpg",
+			"card",
+			"id=\"#",
+			"ToDo",
+			"skill1.jpg",
+			"    level: \"H\"",
+			"    level: \"G\"",
+			"level: \"G\"",
 			"bootstrap",
 			"you.jp",
 			"you",
@@ -1119,17 +1108,7 @@
 			"clog",
 			"console.log",
 			"cons",
-			"+ biker",
-			"Ribot.",
-			"collName",
-			"get",
-			"call",
-			"_user",
-			"topic",
-			"RBot",
-			"fname",
-			"parse",
-			"_node_load_file"
+			"+ biker"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1137,6 +1116,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"student1.png",
+			".png",
+			"id=\"",
+			"Goals",
+			"skill1.png",
+			"    level: \"H\"\n    icon: \"/skills/skill1.jpg\"\n",
+			"    level: \"G\"\n    icon: \"/skills/skill1.jpg\"\n",
 			"/assets/shared/items",
 			"assets/shared",
 			"assets/shared/",
@@ -1257,14 +1243,7 @@
 			".examples",
 			"params",
 			"@userGame",
-			"gameData.scene",
-			"@userGame",
-			"scene",
-			"gob.gameData.sceneData.",
-			"gob.gameData.sceneData",
-			"@gob.gameData.scene",
-			"@gob.gameData",
-			"300"
+			"gameData.scene"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -1275,276 +1254,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 245,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								144,
-								144
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/dc/dev/ref/r2r/meteor-app/client/admin/admin.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 360,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								108,
-								108
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/dc/dev/ref/r2r/meteor-app/client/bridge/bridge.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -1584,7 +1301,7 @@
 	"project": "r2r.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1593,40 +1310,144 @@
 		"selected_items":
 		[
 			[
-				"index",
-				"meteor-app/client/index/index.html"
-			],
-			[
-				"admi",
-				"meteor-app/client/admin/admin.jade"
-			],
-			[
-				"admin",
-				"meteor-app/client/admin/admin.jade"
-			],
-			[
-				"appr",
-				"meteor-app/both/appRoutes.js"
-			],
-			[
 				"inde",
 				"meteor-app/client/index/index.html"
 			],
 			[
-				"cardl",
-				"meteor-app/client/cardList/cardList.html"
+				"tabson",
+				"meteor-app/client/tabs/tabsOne.html"
 			],
 			[
-				"interv",
-				"meteor-app/client/interview/interview.html"
+				"tabso",
+				"meteor-app/client/tabs/tabsOne.html"
+			],
+			[
+				"prio",
+				"meteor-app/client/priorityList/priorityList.html"
+			],
+			[
+				"studen",
+				"meteor-app/client/studentList/studentList.html"
+			],
+			[
+				"stude",
+				"meteor-app/client/studentList/studentList.coffee"
+			],
+			[
+				"indexx",
+				"meteor-app/client/index/index.html"
+			],
+			[
+				"spla",
+				"meteor-app/client/splash/splash.html"
+			],
+			[
+				"metri",
+				"meteor-app/client/metrics/metrics.html"
+			],
+			[
+				"studentl",
+				"meteor-app/client/studentList/studentList.html"
+			],
+			[
+				"student",
+				"meteor-app/data/studentData.coffee"
+			],
+			[
+				"chart",
+				"meteor-app/lib/Charty.coffee"
+			],
+			[
+				"index",
+				"meteor-app/client/index/index.html"
 			],
 			[
 				"in",
 				"meteor-app/client/index/index.html"
 			],
 			[
+				"approu",
+				"meteor-app/both/appRoutes.js"
+			],
+			[
 				"cardd",
 				"meteor-app/data/cardData.coffee"
+			],
+			[
+				"cardl",
+				"meteor-app/client/cardList/cardList.html"
+			],
+			[
+				"appr",
+				"meteor-app/both/appRoutes.js"
+			],
+			[
+				"car",
+				"meteor-app/data/cardData.coffee"
+			],
+			[
+				"splas",
+				"meteor-app/client/splash/splash.html"
+			],
+			[
+				"tabs",
+				"meteor-app/client/tabs/tabsOne.coffee"
+			],
+			[
+				"interv",
+				"meteor-app/client/interview/interview.styl"
+			],
+			[
+				"cards",
+				"meteor-app/client/cardList/cardList.html"
+			],
+			[
+				"splash",
+				"meteor-app/client/splash/splash.html"
+			],
+			[
+				"inter",
+				"meteor-app/client/interview/interview.html"
+			],
+			[
+				"tabst",
+				"meteor-app/client/tabs/tabsTwo.coffee"
+			],
+			[
+				"cardda",
+				"meteor-app/data/cardData.coffee"
+			],
+			[
+				"brid",
+				"meteor-app/client/bridge/bridge.jade"
+			],
+			[
+				"adm",
+				"meteor-app/client/admin/admin.html"
+			],
+			[
+				"tabstwo",
+				"meteor-app/client/tabs/tabsTwo.html"
+			],
+			[
+				"tabstw",
+				"meteor-app/client/tabs/tabsTwo.coffee"
+			],
+			[
+				"admin",
+				"meteor-app/client/admin/admin.html"
+			],
+			[
+				"conta",
+				"meteor-app/client/contacts/contacts.html"
+			],
+			[
+				"metag",
+				"meteor-app/client/layouts/metatags.html"
+			],
+			[
+				"admi",
+				"meteor-app/client/admin/admin.jade"
 			],
 			[
 				"card",
@@ -1691,10 +1512,6 @@
 			[
 				"topics",
 				"app/lib/Topics.coffee"
-			],
-			[
-				"approu",
-				"app/both/appRoutes.coffee"
 			],
 			[
 				"stre",
@@ -2003,106 +1820,6 @@
 			[
 				"styleg",
 				"app/packages/ribot/data/lost/styleguide.rive"
-			],
-			[
-				"bubble",
-				"app/client/widgets/bubbles.jade"
-			],
-			[
-				"shuti",
-				"app/client/widgets/shouting.jade"
-			],
-			[
-				"biker.",
-				"app/packages/ribot/data/lost/biker.rive"
-			],
-			[
-				"shou",
-				"app/client/widgets/shouting.jade"
-			],
-			[
-				"home",
-				"app/client/home/home.jade"
-			],
-			[
-				"capt",
-				"app/client/widgets/caption.styl"
-			],
-			[
-				"bubr",
-				"app/client/widgets/bubright.jade"
-			],
-			[
-				"think",
-				"app/client/widgets/thinking.styl"
-			],
-			[
-				"meta",
-				"app/client/layouts/sidemenu/meta.jade"
-			],
-			[
-				"capti",
-				"app/client/widgets/caption.jade"
-			],
-			[
-				"head",
-				"app/client/widgets/headline.jade"
-			],
-			[
-				"lay/met",
-				"app/client/layouts/sidemenu/meta.jade"
-			],
-			[
-				"notes",
-				"app/packages/ribot/data/lost/notes.txt"
-			],
-			[
-				"bubl",
-				"app/client/widgets/bubleft.jade"
-			],
-			[
-				"lib",
-				"app/packages/ribot/lib/splitLib.coffee"
-			],
-			[
-				"spl",
-				"app/packages/ribot/lib/splitLib.coffee"
-			],
-			[
-				"widei",
-				"app/client/widgets/wideImage.jade"
-			],
-			[
-				"ins",
-				"app/client/widgets/inset.jade"
-			],
-			[
-				"side",
-				"app/data/sideMenuItems.coffee"
-			],
-			[
-				"sli",
-				"app/packages/ribot/lib/splitLib.coffee"
-			],
-			[
-				"crib",
-				"app/packages/ribot/lib/CRibot.coffee"
-			],
-			[
-				"pack",
-				"app/packages/ribot/package.js"
-			],
-			[
-				"street",
-				"app/packages/ribot/data/lost/street.rive"
-			],
-			[
-				"rand",
-				"app/packages/ribot/data/lost/random.rive"
-			],
-			[
-				"ch",
-				"app/client/widgets/chatline.styl"
 			]
 		],
 		"width": 0.0
@@ -2139,7 +1856,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 277.0,
+	"side_bar_width": 218.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

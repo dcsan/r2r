@@ -27,7 +27,7 @@ reactive-var
 
 accounts-password
 
-fourseven:scss
+fourseven:scss@1.0.0
 zimme:iron-router-active
 anti:fake
 matb33:collection-hooks
