@@ -1,17 +1,22 @@
 package com.darkbot.litterator.app;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 import com.melnykov.fab.FloatingActionButton;
 
 import java.io.IOException;
@@ -20,6 +25,7 @@ import java.io.IOException;
 public class MainActivity extends Activity {
     private static final String LOG_TAG = "AudioRecordManager";
     private String recordingFileLocation = null;
+    Context context;
 
     public WebView litWebView;
     public FloatingActionButton fabRecord;
@@ -39,8 +45,12 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         setContentView(R.layout.activity_main);
         audioManager = new AudioManager();
+        context = getBaseContext();
 
         litWebView = (WebView) findViewById(R.id.litWebView);
         fabRecord = (FloatingActionButton) findViewById(R.id.fabRecord);
@@ -58,7 +68,6 @@ public class MainActivity extends Activity {
         playButton = getResources().getDrawable(R.drawable.ic_playbtn);
 
 
-
         fabRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,9 +75,15 @@ public class MainActivity extends Activity {
                     audioManager.startRecording();
                     fabRecord.setColorNormal(Color.GREEN);
 
+                    fabPlay.setColorNormal(Color.GRAY);
+                    fabPlay.setEnabled(false);
+
                 }else{
                  audioManager.stopRecording();
                     fabRecord.setColorNormal(Color.parseColor("#ff5722"));
+
+                    fabPlay.setColorNormal(Color.parseColor("#ff5722"));
+                    fabPlay.setEnabled(true);
                 }
 
 
@@ -82,7 +97,20 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 if (playing) {
-                    audioManager.startPlaying();
+                    audioManager.startPlaying().setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            Toast.makeText(context, "End of recording", Toast.LENGTH_SHORT).show();
+
+                            fabPlay.setColorNormal(Color.parseColor("#ff5722"));
+                            fabRecord.setColorNormal(Color.parseColor("#ff5722"));
+                            fabPlay.setImageDrawable(playButton);
+                            fabRecord.setEnabled(true);
+
+                            playing  = true;
+
+                        }
+                    });
                     fabPlay.setColorNormal(Color.GREEN);
                     fabPlay.setImageDrawable(stopButton);
                     fabRecord.setColorNormal(Color.GRAY);
@@ -91,6 +119,7 @@ public class MainActivity extends Activity {
                     audioManager.stopPlaying();
                     fabPlay.setColorNormal(Color.parseColor("#ff5722"));
                     fabPlay.setImageDrawable(playButton);
+                    fabRecord.setColorNormal(Color.parseColor("#ff5722"));
                     fabRecord.setEnabled(true);
                 }
 
@@ -100,6 +129,9 @@ public class MainActivity extends Activity {
 
 
     }
+
+
+
 
 
 

@@ -25,6 +25,10 @@ public class AudioManager {
 
     }
 
+    public MediaPlayer getMediaPlayer() {
+        return mediaPlayer;
+    }
+
     public void startRecording(){
 
             mediaRecorder = new MediaRecorder();
@@ -50,15 +54,18 @@ public class AudioManager {
 
     }
 
-    public void startPlaying(){
+    public MediaPlayer startPlaying(){
         mediaPlayer = new MediaPlayer();
         try {
             mediaPlayer.setDataSource(recordingFileLocation);
             mediaPlayer.prepare();
             mediaPlayer.start();
+            return mediaPlayer;
         } catch (IOException e) {
             Log.e(LOG_TAG, "prepare() failed");
         }
+
+        return mediaPlayer;
 
     }
 
