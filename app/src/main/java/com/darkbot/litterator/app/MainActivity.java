@@ -1,15 +1,22 @@
 package com.darkbot.litterator.app;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 import com.melnykov.fab.FloatingActionButton;
 
 import java.io.IOException;
@@ -18,10 +25,16 @@ import java.io.IOException;
 public class MainActivity extends Activity {
     private static final String LOG_TAG = "AudioRecordManager";
     private String recordingFileLocation = null;
+    Context context;
 
     public WebView litWebView;
-    public FloatingActionButton fab;
+    public FloatingActionButton fabRecord;
+    public FloatingActionButton fabPlay;
+    Drawable stopButton;
+    Drawable playButton;
+
     private boolean startRecording = true;
+    private boolean playing = true;
     AudioManager audioManager;
 
     public MainActivity() {
@@ -32,11 +45,17 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         setContentView(R.layout.activity_main);
         audioManager = new AudioManager();
+        context = getBaseContext();
 
         litWebView = (WebView) findViewById(R.id.litWebView);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fabRecord = (FloatingActionButton) findViewById(R.id.fabRecord);
+        fabPlay = (FloatingActionButton) findViewById(R.id.fabPlay);
+
 
         litWebView.loadUrl("http://r2r.meteor.com");
         litWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
@@ -45,24 +64,88 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
 
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        stopButton = getResources().getDrawable(R.drawable.ic_stop_btn);
+        playButton = getResources().getDrawable(R.drawable.ic_playbtn);
+
+
+        fabRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startRecording){
                     audioManager.startRecording();
-                    fab.setColorNormal(Color.GREEN);
+                    fabRecord.setColorNormal(Color.GREEN);
+
+                    fabPlay.setColorNormal(Color.GRAY);
+                    fabPlay.setEnabled(false);
 
                 }else{
                  audioManager.stopRecording();
-                    fab.setColorNormal(Color.parseColor("#ff5722"));
+                    fabRecord.setColorNormal(Color.parseColor("#ff5722"));
+
+                    fabPlay.setColorNormal(Color.parseColor("#ff5722"));
+                    fabPlay.setEnabled(true);
                 }
 
 
                 startRecording = !startRecording;
             }
         });
+
+
+        fabPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (playing) {
+                    audioManager.startPlaying().setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            Toast.makeText(context, "End of recording", Toast.LENGTH_SHORT).show();
+
+                            fabPlay.setColorNormal(Color.parseColor("#ff5722"));
+                            fabRecord.setColorNormal(Color.parseColor("#ff5722"));
+                            fabPlay.setImageDrawable(playButton);
+                            fabRecord.setEnabled(true);
+
+                            playing  = true;
+
+                        }
+                    });
+                    fabPlay.setColorNormal(Color.GREEN);
+                    fabPlay.setImageDrawable(stopButton);
+                    fabRecord.setColorNormal(Color.GRAY);
+                    fabRecord.setEnabled(false);
+                } else {
+                    audioManager.stopPlaying();
+                    fabPlay.setColorNormal(Color.parseColor("#ff5722"));
+                    fabPlay.setImageDrawable(playButton);
+                    fabRecord.setColorNormal(Color.parseColor("#ff5722"));
+                    fabRecord.setEnabled(true);
+                }
+
+                playing = !playing;
+            }
+        });
+
+
     }
 
+
+
+
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // Check if the key event was the Back button and if there's history
+        if ((keyCode == KeyEvent.KEYCODE_BACK) && litWebView.canGoBack()) {
+            litWebView.goBack();
+            return true;
+        }
+        // If it wasn't the Back key or there's no web page history, bubble up to the default
+        // system behavior (probably exit the activity)
+        return super.onKeyDown(keyCode, event);
+    }
 
     @Override
     protected void onPause() {
