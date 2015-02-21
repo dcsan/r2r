@@ -76,6 +76,7 @@ public class VisualizerView extends View {
    * Links the visualizer to a player
    * @param player - MediaPlayer instance to link to
    */
+/*
   public void link(MediaPlayer player)
   {
     if(player == null)
@@ -120,45 +121,7 @@ public class VisualizerView extends View {
     });
   }
 
-  /**
-   * Links the visualizer to a player
-   * @param recorder - MediaPlayer instance to link to
-   */
-  public void link(AudioRecord recorder)
-  {
-    if(recorder == null)
-    {
-      throw new NullPointerException("Cannot link to null AudioRecord Instance");
-    }
-
-    // Create the Visualizer object and attach it to our audio recorder.
-    mVisualizer = new Visualizer(recorder.getAudioSessionId());
-    mVisualizer.setCaptureSize(Visualizer.getCaptureSizeRange()[1]);
-
-    // Pass through Visualizer data to VisualizerView
-    Visualizer.OnDataCaptureListener captureListener = new Visualizer.OnDataCaptureListener()
-    {
-      @Override
-      public void onWaveFormDataCapture(Visualizer visualizer, byte[] bytes,
-                                        int samplingRate)
-      {
-        updateVisualizer(bytes);
-      }
-
-      @Override
-      public void onFftDataCapture(Visualizer visualizer, byte[] bytes,
-                                   int samplingRate)
-      {
-        updateVisualizerFFT(bytes);
-      }
-    };
-
-    mVisualizer.setDataCaptureListener(captureListener,
-            Visualizer.getMaxCaptureRate() / 2, true, true);
-
-    // Enabled Visualizer and disable when we're done with the stream
-    mVisualizer.setEnabled(true);
-  }
+*/
 
   public void disableVisualizer(){
 

@@ -16,8 +16,8 @@
 
     <com.darkbot.litterator.app.visualizer.VisualizerView
             android:id="@+id/visualizerView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"/>
+            android:layout_width="300dp"
+            android:layout_height="100dp" android:layout_gravity="bottom"/>
 
     <com.melnykov.fab.FloatingActionButton
             android:id="@+id/fab"

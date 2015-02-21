@@ -77,44 +77,21 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 if(startRecording){
                     //audioManager.startRecording();
+
                     byte[] audioBuffer = new byte[bufferSize];
 
                     audioRecorder.startRecording();
-
+                    fab.setColorNormal(Color.GREEN);
 
 
                     while (startRecording){
                         audioRecorder.read(audioBuffer, 0, bufferSize);
-
-                        //byte to double conversion
-                        double[] micBufferData = new double[bufferSize];//size may need to change
-                        final int bytesPerSample = 2; // As it is 16bit PCM
-                        final double amplification = 1.0; // choose a number as you like
-                        for (int index = 0, floatIndex = 0; index < bufferSize - bytesPerSample + 1; index += bytesPerSample, floatIndex++) {
-                            double sample = 0;
-                            for (int b = 0; b < bytesPerSample; b++) {
-                                int v = audioData[index + b];
-                                if (b < bytesPerSample - 1 || bytesPerSample == 1) {
-                                    v &= 0xFF;
-                                }
-                                sample += v << (b * 8);
-                            }
-                            double sample32 = amplification * (sample / 32768.0);
-                            micBufferData[floatIndex] = sample32;
-                        }
-
-                        //User converted values
-                        Complex[] fftTempArray = new Complex[bufferSize];
-                        for (int i=0; i<bufferSize; i++)
-                        {
-                            fftTempArray[i] = new Complex(audio[i], 0);
-                        }
-                        Complex[] fftArray = FFT.fft(fftTempArray);
+                        visualizerView.updateVisualizer(audioBuffer);
 
                     }
 
 
-                    fab.setColorNormal(Color.GREEN);
+
 
                 }else{
                  audioManager.stopRecording();
@@ -133,7 +110,7 @@ public class MainActivity extends Activity {
 
         // We need to link the visualizer view to the media player so that
         // it displays something
-        //visualizerView = (VisualizerView) findViewById(R.id.visualizerView);
+        visualizerView = (VisualizerView) findViewById(R.id.visualizerView);
         //visualizerView.link(audioRecorder);
 
         // Start with just line renderer
@@ -176,3 +153,33 @@ public class MainActivity extends Activity {
     }
 
 }
+
+
+
+/*
+                        //byte to double conversion
+                        double[] micBufferData = new double[bufferSize];//size may need to change
+                        final int bytesPerSample = 2; // As it is 16bit PCM
+                        final double amplification = 1.0; // choose a number as you like
+                        for (int index = 0, floatIndex = 0; index < bufferSize - bytesPerSample + 1; index += bytesPerSample, floatIndex++) {
+                            double sample = 0;
+                            for (int b = 0; b < bytesPerSample; b++) {
+                                int v = audioData[index + b];
+                                if (b < bytesPerSample - 1 || bytesPerSample == 1) {
+                                    v &= 0xFF;
+                                }
+                                sample += v << (b * 8);
+                            }
+                            double sample32 = amplification * (sample / 32768.0);
+                            micBufferData[floatIndex] = sample32;
+                        }
+
+                        //User converted values
+                        Complex[] fftTempArray = new Complex[bufferSize];
+                        for (int i=0; i<bufferSize; i++)
+                        {
+                            fftTempArray[i] = new Complex(audio[i], 0);
+                        }
+                        Complex[] fftArray = FFT.fft(fftTempArray);
+*/
+
